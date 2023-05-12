@@ -54,7 +54,7 @@ const TodoList = () => {
             </div>
             <div className="content">
                 <label>Fecha:{Date.now()}</label>
-                <input type="text" placeholder={mess ? "tareja" : "Ecribir tarea aquí.."} value={valText} className="textimput" onChange={handleChange} />
+                <input type="text" placeholder={mess ? "Add Tareja" : "Ecribir tarea aquí.."} value={valText} className="textimput" onChange={handleChange} />
                 <button className="myButton"onClick={handleAddTask}>Valider</button>
             </div>
             <div className="footer">
