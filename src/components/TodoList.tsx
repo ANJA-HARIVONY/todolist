@@ -64,7 +64,6 @@ const TodoList = () => {
                     task.map( (tas) => (
                         
                             <li key={tas.id}  >{tas.nombre} <button id={tas.id.toString()} onClick={() => handleDelete(tas.id)}>X</button></li>
-                        
                     )  )
                 }
                 </ul>
