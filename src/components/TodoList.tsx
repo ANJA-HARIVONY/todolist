@@ -38,13 +38,8 @@ const TodoList = () => {
         const id:number = a
         //console.log(id);
         //console.log(tab2);
-
         setTask(tab2.filter(task => task.id !== id));
-        
-
         //setTask(tab2);
-        
-        
     }
 
     return (
@@ -53,7 +48,6 @@ const TodoList = () => {
            <h1>My Todo list</h1>
             </div>
             <div className="content">
-                <label>Fecha:{Date.now()}</label>
                 <input type="text" placeholder={mess ? "Add Tareja" : "Ecribir tarea aquí.."} value={valText} className="textimput" onChange={handleChange} />
                 <button className="myButton"onClick={handleAddTask}>Valider</button>
             </div>
